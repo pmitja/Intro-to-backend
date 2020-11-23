@@ -1,0 +1,13 @@
+.w-100 {
+  width: 100% !important;
+  height: 600px;
+}
+
+.card img{
+    max-height: 260px !important;
+}
+
+.media img{
+    max-height: 150px !important;
+    max-width: 200px !important;
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header header header" 60px
+    ". nav main ads ." 1fr
+    "footer footer footer footer footer" 60px
+    / 10% 0.5fr 1.5fr 0.5fr 10%;
+    ;
+}
+.grid-item {
+
+  padding: 20px;
+}
+.header {
+  grid-area: header;
+  background-color: #3b5997;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  position: relative;
+}
+.navbar {
+  grid-area: nav;
+  padding: 20px;
+}
+.main {
+  grid-area: main;
+  border-left: 2px solid #c4c9cc;
+  border-right: 2px solid #c4c9cc;
+}
+.ads {
+  grid-area: ads;
+}
+.footer {
+  grid-area: footer;
+  background-color: #3b5997;
+  font-size: 0.5rem;
+  justify-items: center;
+}
+.logo img{
+    margin: 10px;
+}
+.icon-header{
+    grid-area: header;
+    display: inline-block;
+    font-size: 0.75rem;
+    position:absolute;
+    margin: 10px;
+}
+
+.input-window{
+    border-radius: 5px;
+}
+.header-button{
+    background-color: #3b5997;
+    border: 0px solid #3b5997;
+}
+.header-links{
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    float: right;
+    padding: 10px;
+}
+.profile-name{
+    font-weight: bold;
+}
+.follow{
+    font-size: 0.7rem;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img{
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.profile-informations{
+    font-size: 0.7rem;
+
+}
+
+.hobbies-and-friends{
+    font-size: 0.7rem;
+}
+
+.friend-button button{
+    font-size: 0.7rem;
+}
+
+.profile-wall{
+    font-style: italic;
+}
+.post p{
+    font-size: 0.7rem;
+    padding: 5px;
+}
+.post img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.icons-post{
+    float: right;
+}
+
+.ads img{
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 100px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+.footer-name{
+    font-size: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
