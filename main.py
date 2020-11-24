@@ -7,9 +7,11 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
+
 @app.route("/fakebook")
 def fakebook():
     return render_template("index_fakebook.html")
+
 
 @app.route("/hairdresser_hans")
 def hairdresser():
